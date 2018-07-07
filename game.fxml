@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #d9f7f0;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.internshala.connect4.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="254.0" minWidth="212.0" prefWidth="212.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="22.0" prefWidth="459.0" GridPane.columnSpan="2" />
+      <Pane fx:id="insertPane" prefHeight="503.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <VBox style="-fx-background-color: #2b3b4c;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Accordion />
+          <TitledPane animated="false" prefHeight="26.0" prefWidth="199.0" text="untitled 2" />
+          <TitledPane animated="false" prefHeight="26.0" prefWidth="76.0" text="untitled 1" />
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="43.0" prefWidth="255.0" text="Player OneTwo" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="43.0" prefWidth="259.0" text="Turn" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font></Label>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Label alignment="CENTER" prefHeight="3.0" prefWidth="254.0" text="Enter Name" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+    </children>
+</GridPane>
